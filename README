@@ -1,0 +1,39 @@
+Author: Tyler Laudenslager
+Project: Final Project
+Professor: Dr. Schwesinger
+Semester: Fall 2021
+Date: 12/15/2021
+Purpose: This program solves any arbitrary
+size peg solitare board producing a move list
+that a person can follow to have only one peg
+left. This game is commonly seen at Cracker Barrel.
+
+Programming Language Used: Rust 1.56.0
+
+Documentation Website:
+https://doc.rust-lang.org/std/index.html
+
+To build the program for optimized performance use the command
+-> cargo build --release
+
+## if there is any build problems use this command to delete the
+## target directory.
+
+-> cargo clean
+
+To execute the program
+./target/release/peg_game (size of board) (empty position)
+
+such that (size of board) >= 5
+and       (empty position) 1-x(x+1)/2 where x = size of the board
+
+To run the program without performance enchancements run the command
+-> cargo run (size of board) (empty position)
+
+example -> cargo run 5 1
+size of board = 5
+empty position = 1
+
+Note: the program eats alot of memory if using board size of 6.
+However you can set any position within the constraints of the board to be empty.
+
