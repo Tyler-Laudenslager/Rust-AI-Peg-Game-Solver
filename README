@@ -39,6 +39,4 @@ Note: the program eats alot of memory if using board size of 6.
 However you can set any position within the constraints of the board to be empty
 using a game board of size 5.
 
-**This program is not fully optimized due to lack of understanding in how memory management
-works in the Rust programming language.
 
